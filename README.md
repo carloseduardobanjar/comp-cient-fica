@@ -16,6 +16,16 @@ Coloque um vídeo intitulado "video.mp4" dentro da pasta do repositório clonado
 python3 main.py
 ```
 
+## Tecnologias
+
+- Python
+- scikit-video
+- numpy
+- random
+- numba
+- scikit-learn
+- tqdm
+
 ## Metodologia
 
 ### 1. Coleta de Amostras
@@ -26,7 +36,7 @@ Para iniciar o processo de reconhecimento do plano de fundo em vídeos, coletamo
 
 Para cada pixel em cada frame selecionado, registramos as cores que ele assume nos 20 frames. Isso resulta em um conjunto de dados que representa a variação das cores ao longo dos frames.
 
-#### 3. Clusterização usando K-Means
+### 3. Clusterização usando K-Means
 
 Utilizamos o algoritmo K-Means para agrupar as cores registradas em dois clusters distintos. Este passo tem como objetivo separar as cores associadas ao plano de fundo das relacionadas ao objeto em movimento.
 
