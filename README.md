@@ -16,6 +16,13 @@ Coloque um vídeo intitulado "video.mp4" dentro da pasta do repositório clonado
 python3 main.py
 ```
 
+## Introdução
+
+Esse tema foi escolhido para o projeto final da disciplina, porque o K-Means faz parte dos algoritmos que envolvem processos iterativos de otimização, assim como o gradiente descendente que vimos. O K-means é um algoritmo de agrupamento utilizado em aprendizado não supervisionado para dividir um conjunto de dados em clusters. O objetivo é minimizar a variação intra-cluster, ou seja, a soma das distâncias quadráticas entre os pontos de dados e o centróide de seu cluster atribuído. Os centróides são ajustados iterativamente até que a convergência seja alcançada, como é possível ver no gif abaixo, retirado do [Wikipédia](https://en.m.wikipedia.org/wiki/File:K-means_convergence.gif).
+
+
+![Kmeans](assets/K-means_convergence.gif)
+
 ## Tecnologias
 
 - Python
