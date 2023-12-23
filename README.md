@@ -78,29 +78,29 @@ Subtraímos o frame de fundo de cada frame original para obter o objeto em movim
 
 #### Vídeo original:
 
-![Vídeo original](video.gif)
+![Vídeo original](assets/video.gif)
 
 #### Plano de fundo:
 
-![Plano de fundo](fundo.png)
+![Plano de fundo](assets/fundo.png)
 
 #### Vídeo com o plano de fundo removido:
 
-![Vídeo com o plano de fundo removido](foreground.gif)
+![Vídeo com o plano de fundo removido](assets/foreground.gif)
 
 ### Outro exemplo... menos emocionante
 
 #### Vídeo original:
 
-![Vídeo original](video2.gif)
+![Vídeo original](assets/video2.gif)
 
 #### Plano de fundo:
 
-![Plano de fundo](fundo2.png)
+![Plano de fundo](assets/fundo2.png)
 
 #### Vídeo com o plano de fundo removido:
 
-![Vídeo com o plano de fundo removido](foreground2.gif)
+![Vídeo com o plano de fundo removido](assets/foreground2.gif)
 
 ## Conclusão
 
