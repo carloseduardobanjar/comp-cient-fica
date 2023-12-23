@@ -80,11 +80,11 @@ Subtraímos o frame de fundo de cada frame original para obter o objeto em movim
 
 ### Vídeo original:
 
-[Vídeo original](video.mp4)
+![Vídeo original](video.gif)
 
 ### Vídeo com o plano de fundo removido:
 
-[Vídeo com o plano de fundo removido](foreground.mp4)
+![Vídeo com o plano de fundo removido](foreground.gif)
 
 ## Tecnologias
 
