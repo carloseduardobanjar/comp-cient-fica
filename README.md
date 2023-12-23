@@ -72,19 +72,48 @@ Criamos um novo frame com todos os pixels associados ao plano de fundo, estimado
 
 Subtraímos o frame de fundo de cada frame original para obter o objeto em movimento. O resultado é um novo conjunto de frames em que apenas o objeto em movimento é preservado.
 
-## Resultado
+## Resultados
 
-### Plano de fundo:
+### Um exemplo
 
-![Plano de fundo](fundo.png)
-
-### Vídeo original:
+#### Vídeo original:
 
 ![Vídeo original](video.gif)
 
-### Vídeo com o plano de fundo removido:
+#### Plano de fundo:
+
+![Plano de fundo](fundo.png)
+
+#### Vídeo com o plano de fundo removido:
 
 ![Vídeo com o plano de fundo removido](foreground.gif)
+
+### Outro exemplo... menos emocionante
+
+#### Vídeo original:
+
+![Vídeo original](video2.gif)
+
+#### Plano de fundo:
+
+![Plano de fundo](fundo2.png)
+
+#### Vídeo com o plano de fundo removido:
+
+![Vídeo com o plano de fundo removido](foreground2.gif)
+
+## Conclusão
+
+A aplicação do algoritmo K-means para remoção de plano de fundo em vídeos apresentou resultados satisfatórios em situações dinâmicas, onde o objeto de interesse, no caso um animal, está em constante movimento. O método foi capaz de capturar não apenas o objeto em movimento, mas também outros elementos dinâmicos da cena, como folhas balançando com o vento, demonstrando a sensibilidade do K-means.
+
+No entanto, observou-se uma limitação quando o animal para de se movimentar. Nesses momentos, o objeto parado foi erroneamente reconhecido como parte do plano de fundo.
+
+Assim, o sucesso do método de remoção de plano de fundo usando o algoritmo K-means depende de várias características do vídeo, como
+
+1. Movimento do objeto;
+2. Contraste entre objeto e plano de fundo;
+3. Iluminação fixa;
+4. Câmera estática.
 
 ## Tecnologias
 
