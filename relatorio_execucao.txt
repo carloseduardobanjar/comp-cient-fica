@@ -1,0 +1,29 @@
+Relatório de Execução - Fri Nov  1 21:49:20 -03 2024
+---------------------------------------
+Sequencial - Video: video1.mp4, Frames: 20 - Tempo: 144s
+Sequencial - Video: video1.mp4, Frames: 50 - Tempo: 189s
+Sequencial - Video: video1.mp4, Frames: 100 - Tempo: 210s
+Sequencial - Video: video2.mp4, Frames: 20 - Tempo: 109s
+Sequencial - Video: video2.mp4, Frames: 50 - Tempo: 137s
+Sequencial - Video: video2.mp4, Frames: 100 - Tempo: 154s
+Concorrente - Video: video1.mp4, Frames: 20, Threads: 2 - Tempo: 112s
+Concorrente - Video: video1.mp4, Frames: 20, Threads: 4 - Tempo: 96s
+Concorrente - Video: video1.mp4, Frames: 20, Threads: 8 - Tempo: 89s
+Concorrente - Video: video1.mp4, Frames: 50, Threads: 2 - Tempo: 115s
+Concorrente - Video: video1.mp4, Frames: 50, Threads: 4 - Tempo: 93s
+Concorrente - Video: video1.mp4, Frames: 50, Threads: 8 - Tempo: 91s
+Concorrente - Video: video1.mp4, Frames: 100, Threads: 2 - Tempo: 114s
+Concorrente - Video: video1.mp4, Frames: 100, Threads: 4 - Tempo: 96s
+Concorrente - Video: video1.mp4, Frames: 100, Threads: 8 - Tempo: 96s
+Concorrente - Video: video2.mp4, Frames: 20, Threads: 2 - Tempo: 85s
+Concorrente - Video: video2.mp4, Frames: 20, Threads: 4 - Tempo: 73s
+Concorrente - Video: video2.mp4, Frames: 20, Threads: 8 - Tempo: 73s
+Concorrente - Video: video2.mp4, Frames: 50, Threads: 2 - Tempo: 86s
+Concorrente - Video: video2.mp4, Frames: 50, Threads: 4 - Tempo: 74s
+Concorrente - Video: video2.mp4, Frames: 50, Threads: 8 - Tempo: 75s
+Concorrente - Video: video2.mp4, Frames: 100, Threads: 2 - Tempo: 85s
+Concorrente - Video: video2.mp4, Frames: 100, Threads: 4 - Tempo: 74s
+Concorrente - Video: video2.mp4, Frames: 100, Threads: 8 - Tempo: 75s
+---------------------------------------
+Relatório de Execução Completo:
+---------------------------------------
