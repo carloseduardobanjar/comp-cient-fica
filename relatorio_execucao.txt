@@ -1,29 +1,35 @@
-Relatório de Execução - Fri Nov  1 21:49:20 -03 2024
+Relatório de Execução - at Nov  9 09:49:56 -03 2024
 ---------------------------------------
-Sequencial - Video: video1.mp4, Frames: 20 - Tempo: 144s
-Sequencial - Video: video1.mp4, Frames: 50 - Tempo: 189s
-Sequencial - Video: video1.mp4, Frames: 100 - Tempo: 210s
-Sequencial - Video: video2.mp4, Frames: 20 - Tempo: 109s
-Sequencial - Video: video2.mp4, Frames: 50 - Tempo: 137s
-Sequencial - Video: video2.mp4, Frames: 100 - Tempo: 154s
-Concorrente - Video: video1.mp4, Frames: 20, Threads: 2 - Tempo: 112s
-Concorrente - Video: video1.mp4, Frames: 20, Threads: 4 - Tempo: 96s
-Concorrente - Video: video1.mp4, Frames: 20, Threads: 8 - Tempo: 89s
-Concorrente - Video: video1.mp4, Frames: 50, Threads: 2 - Tempo: 115s
-Concorrente - Video: video1.mp4, Frames: 50, Threads: 4 - Tempo: 93s
-Concorrente - Video: video1.mp4, Frames: 50, Threads: 8 - Tempo: 91s
-Concorrente - Video: video1.mp4, Frames: 100, Threads: 2 - Tempo: 114s
-Concorrente - Video: video1.mp4, Frames: 100, Threads: 4 - Tempo: 96s
-Concorrente - Video: video1.mp4, Frames: 100, Threads: 8 - Tempo: 96s
-Concorrente - Video: video2.mp4, Frames: 20, Threads: 2 - Tempo: 85s
-Concorrente - Video: video2.mp4, Frames: 20, Threads: 4 - Tempo: 73s
-Concorrente - Video: video2.mp4, Frames: 20, Threads: 8 - Tempo: 73s
-Concorrente - Video: video2.mp4, Frames: 50, Threads: 2 - Tempo: 86s
-Concorrente - Video: video2.mp4, Frames: 50, Threads: 4 - Tempo: 74s
-Concorrente - Video: video2.mp4, Frames: 50, Threads: 8 - Tempo: 75s
-Concorrente - Video: video2.mp4, Frames: 100, Threads: 2 - Tempo: 85s
-Concorrente - Video: video2.mp4, Frames: 100, Threads: 4 - Tempo: 74s
-Concorrente - Video: video2.mp4, Frames: 100, Threads: 8 - Tempo: 75s
+Sequencial - Video: video1.mp4, Frame: 20 - Tempo: 0,28812479972839355 137,71691489219666 1,0251059532165527
+Sequencial - Video: video1.mp4, Frame: 50 - Tempo: 0,23155808448791504 162,30706977844238 1,1162619590759277
+Sequencial - Video: video1.mp4, Frame: 100 - Tempo: 0,24790406227111816 221,02573418617249 1,1699838638305664
+Sequencial - Video: video2.mp4, Frame: 20 - Tempo: 0,5288131237030029 128,89528608322144 2,8566179275512695
+Sequencial - Video: video2.mp4, Frame: 50 - Tempo: 0,5222179889678955 142,37183022499084 2,9796369075775146
+Sequencial - Video: video2.mp4, Frame: 100 - Tempo: 0,5289840698242188 161,40359783172607 3,0252490043640137
+Concorrente - Video: video1.mp4, Frame: 20, Thread: 1 - Tempo: 0,22949600219726562 232,3259310722351 1,3425581455230713
+Concorrente - Video: video1.mp4, Frame: 20, Thread: 2 - Tempo: 0,23546123504638672 139,48545622825623 1,3683099746704102
+Concorrente - Video: video1.mp4, Frame: 20, Thread: 4 - Tempo: 0,24049997329711914 120,89441204071045 1,4810371398925781
+Concorrente - Video: video1.mp4, Frame: 20, Thread: 8 - Tempo: 0,24798202514648438 121,16712284088135 1,364361047744751
+Concorrente - Video: video1.mp4, Frame: 50, Thread: 1 - Tempo: 0,23803091049194336 225,88743114471436 1,397035837173462
+Concorrente - Video: video1.mp4, Frame: 50, Thread: 2 - Tempo: 0,24519896507263184 135,11128187179565 1,3610010147094727
+Concorrente - Video: video1.mp4, Frame: 50, Thread: 4 - Tempo: 0,24086308479309082 121,11276483535767 1,3626739978790283
+Concorrente - Video: video1.mp4, Frame: 50, Thread: 8 - Tempo: 0,24164390563964844 116,30067467689514 1,3960182666778564
+Concorrente - Video: video1.mp4, Frame: 100, Thread: 1 - Tempo: 0,24202799797058105 245,78714609146118 1,3676698207855225
+Concorrente - Video: video1.mp4, Frame: 100, Thread: 2 - Tempo: 0,23920083045959473 139,55997610092163 1,3766868114471436
+Concorrente - Video: video1.mp4, Frame: 100, Thread: 4 - Tempo: 0,2486283779144287 120,25028991699219 1,4184739589691162
+Concorrente - Video: video1.mp4, Frame: 100, Thread: 8 - Tempo: 0,24128103256225586 127,34803104400635 1,6147170066833496
+Concorrente - Video: video2.mp4, Frame: 20, Thread: 1 - Tempo: 0,6023261547088623 179,84624004364014 4,010076999664307
+Concorrente - Video: video2.mp4, Frame: 20, Thread: 2 - Tempo: 0,6188175678253174 117,05449604988098 4,059493064880371
+Concorrente - Video: video2.mp4, Frame: 20, Thread: 4 - Tempo: 0,6218101978302002 94,91263008117676 3,920555830001831
+Concorrente - Video: video2.mp4, Frame: 20, Thread: 8 - Tempo: 0,6006879806518555 99,16315412521362 4,38227391242981
+Concorrente - Video: video2.mp4, Frame: 50, Thread: 1 - Tempo: 0,6318490505218506 190,35777807235718 4,185050964355469
+Concorrente - Video: video2.mp4, Frame: 50, Thread: 2 - Tempo: 0,6272919178009033 120,3094482421875 4,302087068557739
+Concorrente - Video: video2.mp4, Frame: 50, Thread: 4 - Tempo: 0,6437759399414062 96,1892020702362 4,475482225418091
+Concorrente - Video: video2.mp4, Frame: 50, Thread: 8 - Tempo: 0,6492569446563721 107,86653804779053 4,549046993255615
+Concorrente - Video: video2.mp4, Frame: 100, Thread: 1 - Tempo: 0,6501908302307129 195,03835892677307 4,15001916885376
+Concorrente - Video: video2.mp4, Frame: 100, Thread: 2 - Tempo: 0,6298778057098389 117,16849207878113 4,277211904525757
+Concorrente - Video: video2.mp4, Frame: 100, Thread: 4 - Tempo: 0,6246380805969238 113,00931406021118 5,082956075668335
+Concorrente - Video: video2.mp4, Frame: 100, Thread: 8 - Tempo: 0,7044332027435303 107,48327779769897 4,534713983535767
 ---------------------------------------
 Relatório de Execução Completo:
 ---------------------------------------

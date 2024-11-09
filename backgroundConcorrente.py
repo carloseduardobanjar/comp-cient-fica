@@ -54,7 +54,12 @@ def encontra_background(video, threads, n_frames):
     return background
 
 def main(filename, frames, threads):
+    start_time = time.time()
     video = skvideo.io.vread(filename)
+    end_time = time.time()
+    execution_time_entrada = end_time - start_time
+
+    start_time = time.time()
     background = encontra_background(video, threads, frames)
     video = video.astype("int16")
     background = background.astype("int16")
@@ -64,8 +69,14 @@ def main(filename, frames, threads):
         foreground[i] = np.subtract(video[i], background)
         np.clip(foreground[i], 0, 255, out=foreground[i])
         foreground[i] = foreground[i].astype(np.uint8)
-
+    end_time = time.time()
+    execution_time_processamento = end_time - start_time
+    
+    start_time = time.time()
     skvideo.io.vwrite(f"foreground_videos/{filename.split('.')[0]}_{frames}_{threads}.mp4", foreground)
+    end_time = time.time()
+    execution_time_saida = end_time - start_time
+    print(execution_time_entrada, execution_time_processamento, execution_time_saida)
 
 if __name__ == "__main__":
 

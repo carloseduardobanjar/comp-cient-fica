@@ -19,21 +19,14 @@ executar_e_marcar_tempo() {
     local frame=$3
     local thread=$4
     
-    start_time=$(date +%s)
-    
     if [ "$script" == "$PYTHON_SCRIPT_SEQUENCIAL" ]; then
-        python3 "$script" "$video" "$frame"
+        output=$(python3 "$script" "$video" "$frame")
+        read -r value1 value2 value3 <<< "$output"
+        echo "Sequencial - Video: $video, Frames: $frame - Tempo: ${value1}s ${value2}s ${value3}s" >> "$RELATORIO"
     else
-        python3 "$script" "$video" "$frame" "$thread"
-    fi
-
-    end_time=$(date +%s)
-    duration=$((end_time - start_time))
-    
-    if [ "$script" == "$PYTHON_SCRIPT_SEQUENCIAL" ]; then
-        echo "Sequencial - Video: $video, Frames: $frame - Tempo: ${duration}s" >> "$RELATORIO"
-    else
-        echo "Concorrente - Video: $video, Frames: $frame, Threads: $thread - Tempo: ${duration}s" >> "$RELATORIO"
+        output=$(python3 "$script" "$video" "$frame" "$thread")
+        read -r value1 value2 value3 <<< "$output"
+        echo "Concorrente - Video: $video, Frames: $frame, Threads: $thread - Tempo: ${value1}s ${value2}s ${value3}s" >> "$RELATORIO"
     fi
 }
 
