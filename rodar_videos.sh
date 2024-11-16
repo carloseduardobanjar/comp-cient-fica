@@ -24,9 +24,20 @@ executar_e_marcar_tempo() {
         read -r value1 value2 value3 <<< "$output"
         echo "Sequencial - Video: $video, Frames: $frame - Tempo: ${value1}s ${value2}s ${value3}s" >> "$RELATORIO"
     else
-        output=$(python3 "$script" "$video" "$frame" "$thread")
-        read -r value1 value2 value3 <<< "$output"
-        echo "Concorrente - Video: $video, Frames: $frame, Threads: $thread - Tempo: ${value1}s ${value2}s ${value3}s" >> "$RELATORIO"
+        local sum1=0 sum2=0 sum3=0
+        for i in {1..5}; do
+            output=$(python3 "$script" "$video" "$frame" "$thread")
+            read -r value1 value2 value3 <<< "$output"
+            sum1=$(echo "$sum1 + $value1" | bc)
+            sum2=$(echo "$sum2 + $value2" | bc)
+            sum3=$(echo "$sum3 + $value3" | bc)
+        done
+        
+        avg1=$(echo "scale=2; $sum1 / 5" | bc)
+        avg2=$(echo "scale=2; $sum2 / 5" | bc)
+        avg3=$(echo "scale=2; $sum3 / 5" | bc)
+        
+        echo "Concorrente - Video: $video, Frames: $frame, Threads: $thread - Tempo Médio: ${avg1}s ${avg2}s ${avg3}s" >> "$RELATORIO"
     fi
 }
 
@@ -48,7 +59,6 @@ for video in "${VIDEOS[@]}"; do
     done
 done
 
-# Exibe o relatório final
 echo "---------------------------------------" >> "$RELATORIO"
 echo "Relatório de Execução Completo:" >> "$RELATORIO"
 echo "---------------------------------------" >> "$RELATORIO"
